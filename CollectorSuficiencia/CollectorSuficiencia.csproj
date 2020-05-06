@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200506045622_CreandoDB.cs" />
+    <Compile Remove="Migrations\20200506045622_CreandoDB.Designer.cs" />
+    <Compile Remove="Migrations\20200506051011_SegundoSript.cs" />
+    <Compile Remove="Migrations\20200506051011_SegundoSript.Designer.cs" />
+    <Compile Remove="Migrations\20200506053829_EditandoUsuario.cs" />
+    <Compile Remove="Migrations\20200506053829_EditandoUsuario.Designer.cs" />
+    <Compile Remove="Migrations\20200506053955_EditandoOrdenCompra.cs" />
+    <Compile Remove="Migrations\20200506053955_EditandoOrdenCompra.Designer.cs" />
+    <Compile Remove="Migrations\20200506054110_EditandoOrdenCompra2.cs" />
+    <Compile Remove="Migrations\20200506054110_EditandoOrdenCompra2.Designer.cs" />
+    <Compile Remove="Migrations\20200506055118_DBCorregida.cs" />
+    <Compile Remove="Migrations\20200506055118_DBCorregida.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.2" />
+  </ItemGroup>
+
+
+</Project>
